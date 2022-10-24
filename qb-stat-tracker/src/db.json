@@ -1,0 +1,166 @@
+{
+    "quarterbacks": [
+        {
+            "id":1 ,
+            "name": "Josh Allen",
+            "team": "Buffalo Bills",
+            "yards": 2237,
+            "rtouchdowns":2,
+            "ptouchdowns":17,
+            "completions":160,
+            "image":"",
+            "favorited": false
+        },
+        {
+            "id":2,
+            "name":"Patrick Mahomes",
+            "team":"Kansas City Chiefs",
+            "yards":2272,
+            "rtouchdowns":0,
+            "ptouchdowns":20,
+            "completions":176,
+            "image":""
+        },
+        {
+            "id":3,
+            "name":"Joe Burrow",
+            "team":"Cinncinati Bengals",
+            "yards":2227,
+            "rtouchdowns":3,
+            "ptouchdowns":15,
+            "completions":186,
+            "image":""
+        },
+        {
+            "id":4,
+            "name":"Lamar Jackson",
+            "team":"Baltimore Ravens",
+            "yards":"1907",
+            "rtouchdowns":2,
+            "ptouchdowns":13,
+            "completions":121,
+            "image":""
+        },
+        {
+            "id":5,
+            "name":"Jalen Hurts",
+            "team":"Philidelphia Eagles",
+            "yards":1807,
+            "rtouchdowns":6,
+            "ptouchdowns":6,
+            "completions":123,
+            "image":""
+        },
+        {
+            "id":6,
+            "name":"Kyler Murray",
+            "team":"Arizona Cardinals",
+            "yards":1930,
+            "rtouchdowns":2,
+            "ptouchdowns":7,
+            "completions":184,
+            "image":""
+        },
+        {
+            "id":7,
+            "name":"Geno Smith",
+            "team":"Seattle Seahawks",
+            "yards":1844,
+            "rtouchdowns":1,
+            "ptouchdowns":11,
+            "completions":158,
+            "image":""
+        },
+        {
+            "id":8,
+            "name":"Justin Herbert",
+            "team":"Los Angeles Chargers",
+            "yards":"2057",
+            "rtouchdowns":0,
+            "ptouchdowns":12,
+            "completions":203,
+            "image":""
+        },
+        {
+            "id":9,
+            "name":"Daniel Jones",
+            "team":"New York Giants",
+            "yards":1566,
+            "rtouchdowns":3,
+            "ptouchdowns":6,
+            "completions":126,
+            "image":""
+        },
+        {
+            "id":10,
+            "name":"Trevor Lawrence",
+            "team":"Jacksonville Jaguars",
+            "yards":1791,
+            "rtouchdowns":3,
+            "ptouchdowns":9,
+            "completions":155,
+            "image":""
+        },
+        {
+            "id":11,
+            "name":"Marcus Mariota",
+            "team":"Atlanta Falcons",
+            "yards":1416,
+            "rtouchdowns":3,
+            "ptouchdowns":7,
+            "completions":92,
+            "image":""
+        },
+        {
+            "id":12,
+            "name":"Tom Brady",
+            "team":"Tampa Bay Buccaneers",
+            "yards":1936,
+            "rtouchdowns":0,
+            "ptouchdowns":8,
+            "completions":198,
+            "image":""
+        },
+        {
+            "id":13,
+            "name":"Carson Wentz",
+            "team":"Washington Commanders",
+            "yards":1568,
+            "rtouchdowns":0,
+            "ptouchdowns":10,
+            "completions":144,
+            "image":""
+        },
+        {
+            "id":14,
+            "name":"Kirk Cousins",
+            "team":"Minnesota Vikings",
+            "yards":1520,
+            "rtouchdowns":1,
+            "ptouchdowns":9,
+            "completions":151,
+            "image":""
+        },
+        {
+            "id":15,
+            "name":"Matt Ryan",
+            "team":"Indianapolis Colts",
+            "yards":2019,
+            "rtouchdowns":0,
+            "ptouchdowns":9,
+            "completions":203,
+            "image":""
+        },
+        {
+            "id":16,
+            "name":"Jared Goff",
+            "team":"Detroit Lions",
+            "yards":1610,
+            "rtouchdowns":0,
+            "ptouchdowns":11,
+            "completions":132,
+            "image":""
+        }
+
+    ]
+}
