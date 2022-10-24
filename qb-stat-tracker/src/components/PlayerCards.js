@@ -1,6 +1,6 @@
 
 
-const PlayerCard = ({id, name, team, image, yards, rtouchdown, ptouchdown, completions, favorited}) => {
+const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, completions, favorited}) => {
     return (
         <>
             <img src={image} alt={name}/>
@@ -8,8 +8,8 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdown, ptouchdown, compl
                 <h1>{name}</h1>
                 <p>{team}</p>
                 <p>Total yards: {yards}</p>
-                <p>Passing Touchdowns: {rtouchdown}</p>
-                <p>Passing Touchdowns: {ptouchdown}</p>
+                <p>Passing Touchdowns: {rtouchdowns}</p>
+                <p>Passing Touchdowns: {ptouchdowns}</p>
                 <p>Completions: {completions}</p>
                 {true ? 
                     <button>Add to Favorites</button>
