@@ -1,11 +1,9 @@
-
+import Search from "./Search"
 
 
 const Header = () => {
     return (
-        <h1>
-            Good test
-        </h1>
+            <Search />
     )
 }
 

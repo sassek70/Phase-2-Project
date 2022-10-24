@@ -13,7 +13,7 @@ function App() {
     .then(res => res.json())
     .then((playerArray) => setPlayerList(playerArray))
 
-  })
+  },[])
 
 
   return (
