@@ -8,7 +8,7 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
                 <h1>{name}</h1>
                 <p>{team}</p>
                 <p>Total yards: {yards}</p>
-                <p>Passing Touchdowns: {rtouchdowns}</p>
+                <p>Rushing Touchdowns: {rtouchdowns}</p>
                 <p>Passing Touchdowns: {ptouchdowns}</p>
                 <p>Completions: {completions}</p>
                 {true ? 
