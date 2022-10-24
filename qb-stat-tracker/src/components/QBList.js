@@ -1,6 +1,7 @@
+import NewQbForm from "./NewQBForm"
 import PlayerCard from "./PlayerCards"
 
-const QBList = ({playerList}) => {
+const QBList = ({playerList, onFormSubmit}) => {
 
     const displayPlayers = playerList.map((player) => {
         const { id, name, team, image, yards, rtouchdowns, ptouchdowns, completions, favorited } = player
@@ -9,7 +10,8 @@ const QBList = ({playerList}) => {
 
     return(
         <div>
-          {displayPlayers}
+            <NewQbForm onFormSubmit={onFormSubmit} />
+            {displayPlayers}
         </div>
     )
 }

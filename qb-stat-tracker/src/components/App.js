@@ -8,6 +8,26 @@ const playerUrl = `http://localhost:4000/quarterbacks`
 function App() {
   const [playerList, setPlayerList] = useState([])
 
+  const updatePlayerList = (newPlayer) => {
+    setPlayerList((playerList) => ([...playerList, newPlayer]))
+
+  }
+  
+  const onFormSubmit = (newPlayer) => {
+   
+    fetch(playerUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(newPlayer)
+    })
+    .then(res => res.json())
+    .then((updatedList) => updatePlayerList(updatedList))
+  }
+
+
   useEffect (() => {
     fetch(playerUrl)
     .then(res => res.json())
@@ -16,10 +36,12 @@ function App() {
   },[])
 
 
+
   return (
     <div>
+
       <Header />
-      <QBList playerList={playerList}/>
+      <QBList playerList={playerList} onFormSubmit={onFormSubmit}/>
     </div>
   )
 
