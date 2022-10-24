@@ -8,7 +8,7 @@
             "rtouchdowns":2,
             "ptouchdowns":17,
             "completions":160,
-            "image":"",
+            "image":"./images/joshallen.png",
             "favorited": false
         },
         {
@@ -19,7 +19,8 @@
             "rtouchdowns":0,
             "ptouchdowns":20,
             "completions":176,
-            "image":""
+            "image":"./images/patrickmahomes.png",
+            "favorited": false
         },
         {
             "id":3,
@@ -29,7 +30,8 @@
             "rtouchdowns":3,
             "ptouchdowns":15,
             "completions":186,
-            "image":""
+            "image":"./images/joeburrow.png",
+            "favorited": false
         },
         {
             "id":4,
@@ -39,7 +41,8 @@
             "rtouchdowns":2,
             "ptouchdowns":13,
             "completions":121,
-            "image":""
+            "image":"./images/lamarjackson.png",
+            "favorited": false
         },
         {
             "id":5,
@@ -49,7 +52,8 @@
             "rtouchdowns":6,
             "ptouchdowns":6,
             "completions":123,
-            "image":""
+            "image":"./images/jalenhurts.png",
+            "favorited": false
         },
         {
             "id":6,
@@ -59,7 +63,8 @@
             "rtouchdowns":2,
             "ptouchdowns":7,
             "completions":184,
-            "image":""
+            "image":"./images/kylermurray.png",
+            "favorited": false
         },
         {
             "id":7,
@@ -69,7 +74,8 @@
             "rtouchdowns":1,
             "ptouchdowns":11,
             "completions":158,
-            "image":""
+            "image":"./images/genosmith.png",
+            "favorited": false
         },
         {
             "id":8,
@@ -79,7 +85,8 @@
             "rtouchdowns":0,
             "ptouchdowns":12,
             "completions":203,
-            "image":""
+            "image":"./images/justinherbert.png",
+            "favorited": false
         },
         {
             "id":9,
@@ -89,7 +96,8 @@
             "rtouchdowns":3,
             "ptouchdowns":6,
             "completions":126,
-            "image":""
+            "image":"./images/danieljones.png",
+            "favorited": false
         },
         {
             "id":10,
@@ -99,7 +107,8 @@
             "rtouchdowns":3,
             "ptouchdowns":9,
             "completions":155,
-            "image":""
+            "image":"./images/trevorlawrence.png",
+            "favorited": false
         },
         {
             "id":11,
@@ -109,7 +118,8 @@
             "rtouchdowns":3,
             "ptouchdowns":7,
             "completions":92,
-            "image":""
+            "image":"./images/marcusmariota.png",
+            "favorited": false
         },
         {
             "id":12,
@@ -119,7 +129,8 @@
             "rtouchdowns":0,
             "ptouchdowns":8,
             "completions":198,
-            "image":""
+            "image":"./images/tombrady.png",
+            "favorited": false
         },
         {
             "id":13,
@@ -129,7 +140,8 @@
             "rtouchdowns":0,
             "ptouchdowns":10,
             "completions":144,
-            "image":""
+            "image":"./images/carsonwentz.png",
+            "favorited": false
         },
         {
             "id":14,
@@ -139,7 +151,8 @@
             "rtouchdowns":1,
             "ptouchdowns":9,
             "completions":151,
-            "image":""
+            "image":"./images/kirkcousins.png",
+            "favorited": false
         },
         {
             "id":15,
@@ -149,7 +162,8 @@
             "rtouchdowns":0,
             "ptouchdowns":9,
             "completions":203,
-            "image":""
+            "image":"./images/mattryan.png",
+            "favorited": false
         },
         {
             "id":16,
@@ -159,8 +173,393 @@
             "rtouchdowns":0,
             "ptouchdowns":11,
             "completions":132,
-            "image":""
+            "image":"./images/jaredgoff.png",
+            "favorited": false
+        },
+        {
+            "id":17,
+            "name":"Aaron Rodgers",
+            "team":"Green Bay Packers",
+            "yards":1606,
+            "rtouchdowns":0,
+            "ptouchdowns":11,
+            "completions":163,
+            "image":"./images/aaronrodgers.png",
+            "favorited": false
+        },
+        {
+            "id":18,
+            "name":"Derek Carr",
+            "team":"Los Vegas Raiders",
+            "yards":1588,
+            "rtouchdowns":0,
+            "ptouchdowns":9,
+            "completions":134,
+            "image":"./images/derekcarr.png",
+            "favorited": false
+        },
+        {
+            "id":19,
+            "name":"Jacoby Brissett",
+            "team":"Cleveland Browns",
+            "yards":1714,
+            "rtouchdowns":1,
+            "ptouchdowns":6,
+            "completions":146,
+            "image":"./images/jacobybrissett.png",
+            "favorited": false
+        },
+        {
+            "id":20,
+            "name":"Jimmy Garoppolo",
+            "team":"San Francisco 49ers",
+            "yards":1476,
+            "rtouchdowns":1,
+            "ptouchdowns":9,
+            "completions":119,
+            "image":"./images/jimmygaroppolo.png",
+            "favorited": false
+        },
+        {
+            "id":21,
+            "name":"Russell Wilson",
+            "team":"Denver Broncos",
+            "yards":1536,
+            "rtouchdowns":1,
+            "ptouchdowns":5,
+            "completions":116,
+            "image":"./images/russellwilson.png",
+            "favorited": false
+        },
+        {
+            "id":22,
+            "name":"Tua Tagovailoa",
+            "team":"Miami Dolphins",
+            "yards":1312,
+            "rtouchdowns":0,
+            "ptouchdowns":9,
+            "completions":101,
+            "image":"./images/tuatagovailoa.png",
+            "favorited": false
+        },
+        {
+            "id":23,
+            "name":"Justin Fields",
+            "team":"Chicago Bears",
+            "yards":1151,
+            "rtouchdowns":1,
+            "ptouchdowns":4,
+            "completions":63,
+            "image":"./images/justinfields.png",
+            "favorited": false
+        },
+        {
+            "id":24,
+            "name":"Davis Mills",
+            "team":"Houston Texas",
+            "yards":1352,
+            "rtouchdowns":0,
+            "ptouchdowns":7,
+            "completions":132,
+            "image":"./images/davismills.png",
+            "favorited": false
+        },
+        {
+            "id":25,
+            "name":"Mathew Stafford",
+            "team":"Los Angeles Rams",
+            "yards":1583,
+            "rtouchdowns":0,
+            "ptouchdowns":6,
+            "completions":160,
+            "image":"./images/mathewstafford.png",
+            "favorited": false
+        },
+        {
+            "id":26,
+            "name":"Ryan Tannehill",
+            "team":"Tennessee Titans",
+            "yards":1126,
+            "rtouchdowns":1,
+            "ptouchdowns":6,
+            "completions":95,
+            "image":"./images/ryantannehill.png",
+            "favorited": false
+        },
+        {
+            "id":27,
+            "name":"Andy Dalton",
+            "team":"New Orleans Saints",
+            "yards":974,
+            "rtouchdowns":0,
+            "ptouchdowns":7,
+            "completions":83,
+            "image":"./images/andydalton.png",
+            "favorited": false
+        },
+        {
+            "id":28,
+            "name":"Baker Mayfield",
+            "team":"Carolina Panthers",
+            "yards":1002,
+            "rtouchdowns":1,
+            "ptouchdowns":4,
+            "completions":84,
+            "image":"./images/bakermayfield.png",
+            "favorited": false
+        },
+        {
+            "id":29,
+            "name":"Cooper Rush",
+            "team":"Dallas Cowboys",
+            "yards":1026,
+            "rtouchdowns":0,
+            "ptouchdowns":5,
+            "completions":90,
+            "image":"./images/cooperrush.png",
+            "favorited": false
+        },
+        {
+            "id":30,
+            "name":"Mitch Trubisky",
+            "team":"Pittsburgh Steelers",
+            "yards":826,
+            "rtouchdowns":1,
+            "ptouchdowns":3,
+            "completions":78,
+            "image":"./images/mitchtrubisky.png",
+            "favorited": false
+        },
+        {
+            "id":31,
+            "name":"Kenny Pickett",
+            "team":"Pittsburgh Steelers",
+            "yards":832,
+            "rtouchdowns":2,
+            "ptouchdowns":2,
+            "completions":87,
+            "image":"./images/kennypickett.png",
+            "favorited": false
+        },
+        {
+            "id":32,
+            "name":"Jameis Winston",
+            "team":"New Orleans Saints",
+            "yards":874,
+            "rtouchdowns":0,
+            "ptouchdowns":4,
+            "completions":73,
+            "image":"./images/jameiswinston.png",
+            "favorited": false
+        },
+        {
+            "id":33,
+            "name":"Joe Flacco",
+            "team":"New York Jets",
+            "yards":907,
+            "rtouchdowns":0,
+            "ptouchdowns":5,
+            "completions":91,
+            "image":"./images/joeflacco.png",
+            "favorited": false
+        },
+        {
+            "id":34,
+            "name":"Zach Wilson",
+            "team":"New York Jets",
+            "yards":735,
+            "rtouchdowns":1,
+            "ptouchdowns":1,
+            "completions":58,
+            "image":"./images/zachwilson.png",
+            "favorited": false
+        },
+        {
+            "id":35,
+            "name":"Mac Jones",
+            "team":"New England Patriots",
+            "yards":824,
+            "rtouchdowns":1,
+            "ptouchdowns":2,
+            "completions":64,
+            "image":"./images/macjones.png",
+            "favorited": false
+        },
+        {
+            "id":36,
+            "name":"Bailey Zappe",
+            "team":"New England Patriots",
+            "yards":823,
+            "rtouchdowns":0,
+            "ptouchdowns":4,
+            "completions":51,
+            "image":"./images/baileyzappe.png",
+            "favorited": false
+        },
+        {
+            "id":37,
+            "name":"Teddy Bridgewater",
+            "team":"Miami Dolphins",
+            "yards":543,
+            "rtouchdowns":0,
+            "ptouchdowns":3,
+            "completions":37,
+            "image":"./images/teddybridgewater.png",
+            "favorited": false
+        },
+        {
+            "id":38,
+            "name":"Dak Prescott",
+            "team":"Dallas Cowboys",
+            "yards":352,
+            "rtouchdowns":0,
+            "ptouchdowns":1,
+            "completions":33,
+            "image":"./images/dakprescott.png",
+            "favorited": false
+        },
+        {
+            "id":39,
+            "name":"PJ Walker",
+            "team":"Carolina Panthers",
+            "yards":296,
+            "rtouchdowns":0,
+            "ptouchdowns":2,
+            "completions":31,
+            "image":"./images/pjwalker.png",
+            "favorited": false
+        },
+        {
+            "id":40,
+            "name":"Taylor Heinicke",
+            "team":"Washington Commanders",
+            "yards":205,
+            "rtouchdowns":0,
+            "ptouchdowns":2,
+            "completions":20,
+            "image":"./images/taylorheinicke.png",
+            "favorited": false
+        },
+        {
+            "id":41,
+            "name":"Trey Lance",
+            "team":"San Francisco 49ers",
+            "yards":261,
+            "rtouchdowns":0,
+            "ptouchdowns":0,
+            "completions":15,
+            "image":"./images/treylance.png",
+            "favorited": false
+        },
+        {
+            "id":42,
+            "name":"Brett Rypien",
+            "team":"Denver Broncos",
+            "yards":234,
+            "rtouchdowns":0,
+            "ptouchdowns":0,
+            "completions":24,
+            "image":"./images/brettrypien.png",
+            "favorited": false
+        },
+        {
+            "id":43,
+            "name":"Skylar Thompson",
+            "team":"Miami Dolphins",
+            "yards":264,
+            "rtouchdowns":0,
+            "ptouchdowns":0,
+            "completions":46,
+            "image":"./images/skylarthompson.png",
+            "favorited": false
+        },
+        {
+            "id":44,
+            "name":"Jordan Love",
+            "team":"Green Bay Packers",
+            "yards":73,
+            "rtouchdowns":0,
+            "ptouchdowns":0,
+            "completions":6,
+            "image":"./images/jordanlove.png",
+            "favorited": false
+        },
+        {
+            "id":45,
+            "name":"Trace McSorley",
+            "team":"Arizona Cardinals",
+            "yards":32,
+            "rtouchdowns":0,
+            "ptouchdowns":12,
+            "completions":2,
+            "image":"./images/tracemcsorley.png",
+            "favorited": false
+        },
+        {
+            "id":46,
+            "name":"Tyrod Taylor",
+            "team":"New York Giants",
+            "yards":41,
+            "rtouchdowns":0,
+            "ptouchdowns":0,
+            "completions":1,
+            "image":"./images/tyrodtaylor.png",
+            "favorited": false
+        },
+        {
+            "id":47,
+            "name":"Brock Purdy",
+            "team":"San Francisco 49ers",
+            "yards":41,
+            "rtouchdowns":0,
+            "ptouchdowns":0,
+            "completions":4,
+            "image":"./images/brockpurdy.png",
+            "favorited": false
+        },
+        {
+            "id":48,
+            "name":"Jeff Driskel",
+            "team":"Houston Texas",
+            "yards":15,
+            "rtouchdowns":0,
+            "ptouchdowns":0,
+            "completions":0,
+            "image":"./images/jeffdriskel.png",
+            "favorited": false
+        },
+        {
+            "id":49,
+            "name":"Brian Hoyer",
+            "team":"New England Patriots",
+            "yards":37,
+            "rtouchdowns":0,
+            "ptouchdowns":0,
+            "completions":5,
+            "image":"./images/brianhoyer.png",
+            "favorited": false
+        },
+        {
+            "id":50,
+            "name":"Jacob Eason",
+            "team":"Carolina Panthers",
+            "yards":59,
+            "rtouchdowns":0,
+            "ptouchdowns":0,
+            "completions":3,
+            "image":"./images/jacobeason.png",
+            "favorited": false
+        },
+        {
+            "id":51,
+            "name":"Case Keenum",
+            "team":"Buffalo Bills",
+            "yards":8,
+            "rtouchdowns":0,
+            "ptouchdowns":0,
+            "completions":2,
+            "image":"./images/casekeenum.png",
+            "favorited": false
         }
-
     ]
 }
