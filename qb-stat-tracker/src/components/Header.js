@@ -1,9 +1,11 @@
 import Search from "./Search"
 
 
-const Header = () => {
+const Header = (props) => {
     return (
-            <Search />
+            <Search changeSearch ={props.changeSearch}
+            changeSearchValue = {props.changeSearchValue}
+            searchValue = {props.searchValue} />
     )
 }
 

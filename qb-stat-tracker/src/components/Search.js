@@ -1,8 +1,15 @@
+import React from "react";
 
-
-const Search = () => {
+const Search = (props) => {
     return (
-        <input type="text" placeholder="Search Quarterbacks"/>
+        <div>
+        <input type="text" 
+        id = "search"
+        placeholder="Search Quarterbacks"
+        onChange={(e) => props.changeSearch(e.target.value)}
+        />
+        <button onClick={props.changeSearchValue}>{props.searchValue ? "Click to Search by Team" : "Click to Search by Name"}</button>
+        </div>
     )
 }
 
