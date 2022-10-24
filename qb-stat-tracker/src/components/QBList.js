@@ -8,9 +8,9 @@ const QBList = ({playerList}) => {
     })
 
     return(
-        <>
+        <div>
           {displayPlayers}
-        </>
+        </div>
     )
 }
 
