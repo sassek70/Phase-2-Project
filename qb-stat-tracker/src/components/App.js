@@ -9,7 +9,26 @@ function App() {
   const [playerList, setPlayerList] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
   const [searchValue, setSearchValue] = useState(true)
+
+  const updatePlayerList = (newPlayer) => {
+    setPlayerList((playerList) => ([...playerList, newPlayer]))
+
+  }
   
+  const onFormSubmit = (newPlayer) => {
+   
+    fetch(playerUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(newPlayer)
+    })
+    .then(res => res.json())
+    .then((updatedList) => updatePlayerList(updatedList))
+  }
+
   useEffect (() => {
     fetch(playerUrl)
     .then(res => res.json())
@@ -17,24 +36,7 @@ function App() {
 
   },[])
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   function changeSearch(text) {
     setSearchTerm(text)
   }
@@ -51,8 +53,6 @@ function App() {
       <QBList playerList={searchValue ? filteredPlayersByName : filteredPlayersByTeam}/>
     </div>
   )
-
-
 }
 
 export default App;
