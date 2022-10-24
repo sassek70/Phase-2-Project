@@ -50,7 +50,7 @@ function App() {
     <div>
       <Header changeSearch = {changeSearch} changeSearchValue = {changeSearchValue} searchValue = {searchValue}
       />
-      <QBList playerList={searchValue ? filteredPlayersByName : filteredPlayersByTeam}/>
+      <QBList playerList={searchValue ? filteredPlayersByName : filteredPlayersByTeam} onFormSubmit={onFormSubmit}/>
     </div>
   )
 }

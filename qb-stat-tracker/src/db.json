@@ -266,13 +266,13 @@
     },
     {
       "id": 25,
-      "name": "Mathew Stafford",
+      "name": "Matthew Stafford",
       "team": "Los Angeles Rams",
       "yards": 1583,
       "rtouchdowns": 0,
       "ptouchdowns": 6,
       "completions": 160,
-      "image": "./images/mathewstafford.png",
+      "image": "./images/matthewstafford.png",
       "favorited": false
     },
     {
