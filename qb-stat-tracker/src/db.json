@@ -560,6 +560,17 @@
       "completions": 2,
       "image": "./images/casekeenum.png",
       "favorited": false
+    },
+    {
+      "name": "Josh Allen",
+      "team": "Buffalo Bills",
+      "yards": 0,
+      "rtouchdowns": 0,
+      "ptouchdowns": 0,
+      "completions": 0,
+      "image": "./images/stockplayer.jpg",
+      "favorited": false,
+      "id": 52
     }
   ]
 }
