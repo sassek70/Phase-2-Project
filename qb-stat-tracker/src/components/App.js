@@ -35,12 +35,15 @@ function App() {
     .then((updatedList) => updatePlayerList(updatedList))
   }
 
-  useEffect (() => {
+  const updateList = () => {
     fetch(playerUrl)
     .then(res => res.json())
     .then((playerArray) => setPlayerList(playerArray))
+  }
 
-  },[playerList])
+  useEffect (() => {
+    updateList()
+  },[])
 
 
   function changeSearch(text) {
@@ -80,8 +83,12 @@ function App() {
   .then(res => res.json())
   .then((updatedPlayer) => {
     console.log(updatedPlayer)
+    updateList()
     navigate('/')})
 }
+
+
+
 
   return (
     <div>
