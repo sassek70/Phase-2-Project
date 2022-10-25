@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./Header";
+import NewQbForm from "./NewQBForm";
 import QBList from "./QBList";
 
 const playerUrl = `http://localhost:4000/quarterbacks`
@@ -9,6 +11,7 @@ function App() {
   const [playerList, setPlayerList] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
   const [searchValue, setSearchValue] = useState(true)
+  const [page, setPage] = useState("/")
 
   const updatePlayerList = (newPlayer) => {
     setPlayerList((playerList) => ([...playerList, newPlayer]))
@@ -48,9 +51,11 @@ function App() {
   
   return (
     <div>
-      <Header changeSearch = {changeSearch} changeSearchValue = {changeSearchValue} searchValue = {searchValue}
-      />
-      <QBList playerList={searchValue ? filteredPlayersByName : filteredPlayersByTeam} onFormSubmit={onFormSubmit}/>
+      <Header changeSearch = {changeSearch} changeSearchValue = {changeSearchValue} searchValue = {searchValue}/>
+        <Routes>
+          <Route exact path="/" element={<QBList playerList={searchValue ? filteredPlayersByName : filteredPlayersByTeam} onFormSubmit={onFormSubmit}/>}/>
+          <Route path="/form" element={<NewQbForm path="/form" onFormSubmit={onFormSubmit} />}/>
+        </Routes>
     </div>
   )
 }

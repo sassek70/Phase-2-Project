@@ -4,8 +4,8 @@ import { useState } from "react"
 
 const NewQbForm = ({ onFormSubmit }) => {
     const [formData, setFormData] = useState({
-        name: "Josh Allen",
-        team: "Buffalo Bills",
+        name: "",
+        team: "",
         yards: 0,
         rtouchdowns:0,
         ptouchdowns:0,

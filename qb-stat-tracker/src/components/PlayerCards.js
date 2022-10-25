@@ -16,6 +16,10 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
                     :
                     <button>Remove from Favorites</button>
                 }
+                {/* <button onClick={<Route path="/player/:id/EditForm" 
+                element={<EditForm player={player.id}/>}
+                />}>Edit Player Stats 
+                </button> */}
             </div>
         </>
     )
