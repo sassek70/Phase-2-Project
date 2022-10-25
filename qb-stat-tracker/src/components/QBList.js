@@ -1,4 +1,4 @@
-import NewQbForm from "./NewQBForm"
+
 import PlayerCard from "./PlayerCards"
 
 const QBList = ({playerList}) => {
