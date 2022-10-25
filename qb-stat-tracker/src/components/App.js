@@ -3,8 +3,9 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Header from "./Header";
 import NewQbForm from "./NewQBForm";
 import QBList from "./QBList";
+import EditPlayerForm from "./EditPlayerForm"
 
-const playerUrl = `http://localhost:4000/quarterbacks`
+const playerUrl = `http://localhost:4000/quarterbacks/`
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
     .then(res => res.json())
     .then((playerArray) => setPlayerList(playerArray))
 
-  },[])
+  },[playerList])
 
 
   function changeSearch(text) {
@@ -56,12 +57,39 @@ function App() {
     }
 
 
+  const onEditPlayer = (editedPlayer) => {
+    console.log(editedPlayer.id)
+
+    fetch(playerUrl + `${editedPlayer.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      name: editedPlayer.name,
+      team: editedPlayer.team,
+      yards: editedPlayer.yards,
+      rtouchdowns:editedPlayer.rtouchdowns,
+      ptouchdowns:editedPlayer.ptouchdowns,
+      completions:editedPlayer.completions,
+      image:editedPlayer.image,
+      favorited: editedPlayer.favorited
+    })
+  })
+  .then(res => res.json())
+  .then((updatedPlayer) => {
+    console.log(updatedPlayer)
+    navigate('/')})
+}
+
   return (
     <div>
       <Header changePageUrl={changePageUrl} changeSearch = {changeSearch} changeSearchValue = {changeSearchValue} searchValue = {searchValue}/>
         <Routes>
           <Route path="/" element={<QBList playerList={searchValue ? filteredPlayersByName : filteredPlayersByTeam} onFormSubmit={onFormSubmit}/>}/>
           <Route path="/form" element={<NewQbForm onFormSubmit={onFormSubmit} />}/>
+          <Route path="/player/:id/EditForm" element={<EditPlayerForm onEditPlayer={onEditPlayer}/>}/>
         </Routes>
     </div>
   )

@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, completions, favorited}) => {
     return (
@@ -16,13 +16,14 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
                     :
                     <button>Remove from Favorites</button>
                 }
-                {/* <button onClick={<Route path="/player/:id/EditForm" 
-                element={<EditForm player={player.id}/>}
-                />}>Edit Player Stats 
-                </button> */}
+                <Link to={`/player/${id}/EditForm`}>Edit Player Stats</Link>
             </div>
         </>
     )
 }
 
 export default PlayerCard
+
+
+
+{/* <EditForm id={id} name={name} team={team} image={image} yards={yards} rtouchdowns={rtouchdowns} ptouchdowns={ptouchdowns} completions={completions} favorited={favorited}/> */}

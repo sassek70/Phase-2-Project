@@ -5,9 +5,9 @@
       "name": "Josh Allen",
       "team": "Buffalo Bills",
       "yards": 2237,
-      "rtouchdowns": 2,
-      "ptouchdowns": 17,
-      "completions": 160,
+      "rtouchdowns": "30",
+      "ptouchdowns": "24",
+      "completions": "160",
       "image": "./images/joshallen.png",
       "favorited": false
     },
