@@ -4,6 +4,7 @@ import Header from "./Header";
 import NewQbForm from "./NewQBForm";
 import QBList from "./QBList";
 import EditPlayerForm from "./EditPlayerForm"
+import FavoritesList from "./FavoritesList";
 
 const playerUrl = `http://localhost:4000/quarterbacks/`
 
@@ -97,6 +98,7 @@ function App() {
           <Route path="/" element={<QBList playerList={searchValue ? filteredPlayersByName : filteredPlayersByTeam} onFormSubmit={onFormSubmit}/>}/>
           <Route path="/form" element={<NewQbForm onFormSubmit={onFormSubmit} />}/>
           <Route path="/player/:id/EditForm" element={<EditPlayerForm onEditPlayer={onEditPlayer}/>}/>
+          <Route path="/favorites" element={<FavoritesList playerList={playerList}/>}/>
         </Routes>
     </div>
   )
