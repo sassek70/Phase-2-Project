@@ -5,6 +5,7 @@ const playerUrl = `http://localhost:4000/quarterbacks/`
 
 const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, completions, favorited, status, handleFavoriteChange}) => {
     const [isFavorited, setIsFavorited] = useState(favorited)
+    const [showDetails, setShowDetails] = useState(false)
 
     const toggleFavorite = () => {
         setIsFavorited((isFavorited) => !isFavorited)
@@ -31,15 +32,18 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
         })
     }
 
+    const showStats = () =>{
+        setShowDetails(!showDetails)
+    }
 
 
 
     return (
         <>
-            <img src={image} alt={name}/>
+            <img src={image} alt={name} onClick={showStats}/>
             <div>
-                <h1>{name}</h1>
-                <p>{team}</p>
+                {showDetails ? 
+                <>
                 <p>Total yards: {yards}</p>
                 <p>Rushing Touchdowns: {rtouchdowns}</p>
                 <p>Passing Touchdowns: {ptouchdowns}</p>
@@ -51,6 +55,13 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
                     <button onClick={toggleFavorite}>Add to Favorites</button>
                 }
                 <Link to={`/player/${id}/EditForm`}>Edit Player Stats</Link>
+                </>
+                :
+                <>
+                <h1>{name}</h1>
+                <p>{team}</p>
+                </>
+            }
             </div>
         </>
     )
@@ -58,6 +69,3 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
 
 export default PlayerCard
 
-
-
-{/* <EditForm id={id} name={name} team={team} image={image} yards={yards} rtouchdowns={rtouchdowns} ptouchdowns={ptouchdowns} completions={completions} favorited={favorited}/> */}

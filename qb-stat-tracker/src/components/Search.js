@@ -5,7 +5,7 @@ const Search = (props) => {
         <div>
         <input type="text" 
         id = "search"
-        placeholder="Search Quarterbacks"
+        placeholder="Search Player or Team"
         onChange={(e) => props.changeSearch(e.target.value)}
         />
         </div>
