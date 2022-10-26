@@ -54,7 +54,7 @@ function App() {
     setSearchValue(!searchValue)
   }
   const filteredPlayers = playerList.filter(player => player.name.toLowerCase().includes(searchTerm.toLowerCase()) || player.team.toLowerCase().includes(searchTerm.toLowerCase()))
-  //const filteredPlayersByTeam = playerList.filter(player => player.team.toLowerCase().includes(searchTerm.toLowerCase()))
+
 
   
 function changeSortBy(newSortBy) {
@@ -115,6 +115,11 @@ function sortPlayers() {
     navigate('/')})
 }
 
+ const handleFavoriteChange =(updatedPlayer)=>{
+  const updatedList = playerList.map((player) => player.id === updatedPlayer.id? updatedPlayer: player)
+  setPlayerList(updatedList)
+ }
+
 
 
 
@@ -123,10 +128,10 @@ function sortPlayers() {
       <Header changePageUrl={changePageUrl} changeSearch = {changeSearch} changeSearchValue = {changeSearchValue} searchValue = {searchValue}
       changeSortBy = {changeSortBy}/>
         <Routes>
-          <Route path="/" element={<QBList playerList={sortPlayers()} onFormSubmit={onFormSubmit}/>}/>
+          <Route path="/" element={<QBList playerList={sortPlayers()} onFormSubmit={onFormSubmit} handleFavoriteChange={handleFavoriteChange}/>}/>
           <Route path="/form" element={<NewQbForm onFormSubmit={onFormSubmit} />}/>
           <Route path="/player/:id/EditForm" element={<EditPlayerForm onEditPlayer={onEditPlayer}/>}/>
-          <Route path="/favorites" element={<FavoritesList playerList={playerList}/>}/>
+          <Route path="/favorites" element={<FavoritesList playerList={filteredPlayers} handleFavoriteChange={handleFavoriteChange}/>}/>
         </Routes>
     </div>
   )
