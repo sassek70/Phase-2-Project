@@ -13,7 +13,8 @@ const EditForm = ({onEditPlayer}) => {
         ptouchdowns:0,
         completions:0,
         image:"",
-        favorited: false
+        favorited: false,
+        status: ""
     })
 
     // populates form with player's stats
@@ -36,7 +37,7 @@ const EditForm = ({onEditPlayer}) => {
         event.preventDefault()
         onEditPlayer(formData)        
     }
-
+    console.log(formData)
 
 
     return (
@@ -48,6 +49,11 @@ const EditForm = ({onEditPlayer}) => {
             <input value={formData.ptouchdowns} type="number" name="ptouchdowns" placeholder="Rushing Touchdowns" onChange={handleChange}/>
             <input value={formData.completions} type="number" name="completions" placeholder="Completions Touchdowns" onChange={handleChange}/>
             <input value={formData.image} type="text" name="image" placeholder="Player's image" onChange={handleChange}/>
+            <select name="Status" placeholder="Player Status" onChange={handleChange}>
+                <option value="Set Status" selected disabled hidden>Select Status</option>
+                <option value="Active" >Active</option>
+                <option value="Inactive" >Inactive</option>
+            </select>
             <button>Edit Player</button>
         </form>
         // <div>Hello {`${id}`}</div>
