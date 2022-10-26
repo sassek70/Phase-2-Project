@@ -8,7 +8,6 @@ const Search = (props) => {
         placeholder="Search Quarterbacks"
         onChange={(e) => props.changeSearch(e.target.value)}
         />
-        <button onClick={props.changeSearchValue}>{props.searchValue ? "Click to Search by Team" : "Click to Search by Name"}</button>
         </div>
     )
 }

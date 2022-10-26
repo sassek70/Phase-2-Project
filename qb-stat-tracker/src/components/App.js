@@ -13,7 +13,7 @@ function App() {
   const [playerList, setPlayerList] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
   const [searchValue, setSearchValue] = useState(true)
-  
+  const [sort, setSort] = useState('None')  
   
   const navigate = useNavigate()
 
@@ -53,9 +53,36 @@ function App() {
   function changeSearchValue() {
     setSearchValue(!searchValue)
   }
-  const filteredPlayersByName = playerList.filter(player => player.name.toLowerCase().includes(searchTerm.toLowerCase()))
-  const filteredPlayersByTeam = playerList.filter(player => player.team.toLowerCase().includes(searchTerm.toLowerCase()))
+  const filteredPlayers = playerList.filter(player => player.name.toLowerCase().includes(searchTerm.toLowerCase()) || player.team.toLowerCase().includes(searchTerm.toLowerCase()))
+  //const filteredPlayersByTeam = playerList.filter(player => player.team.toLowerCase().includes(searchTerm.toLowerCase()))
 
+  
+function changeSortBy(newSortBy) {
+  setSort(newSortBy)
+}
+ 
+
+// function makeSortedPlayers() {
+//   if (searchValue = true) {
+//     let sortedPlayers = filteredPlayersByName
+//   if (searchValue = false) {
+//    let sortedPlayers = filteredPlayersByTeam
+//   }
+// }
+// }
+function sortPlayers() {
+  if (sort === 'Yards')
+    return filteredPlayers.sort((player1, player2) => player2.yards - player1.yards)
+  else if (sort === 'Rushing Touchdowns')
+    return filteredPlayers.sort((player1, player2) => player2.rtouchdowns - player1.rtouchdowns)
+  else if (sort === 'Passing Touchdowns')
+    return filteredPlayers.sort((player1, player2) => player2.ptouchdowns - player1.ptouchdowns)
+  else if (sort === 'Completions')
+    return filteredPlayers.sort((player1, player2) => player2.completions - player1.completions)
+  else
+    return filteredPlayers
+}   
+  
   const changePageUrl = (newUrl) => {
     navigate(newUrl)
     }
@@ -93,9 +120,10 @@ function App() {
 
   return (
     <div>
-      <Header changePageUrl={changePageUrl} changeSearch = {changeSearch} changeSearchValue = {changeSearchValue} searchValue = {searchValue}/>
+      <Header changePageUrl={changePageUrl} changeSearch = {changeSearch} changeSearchValue = {changeSearchValue} searchValue = {searchValue}
+      changeSortBy = {changeSortBy}/>
         <Routes>
-          <Route path="/" element={<QBList playerList={searchValue ? filteredPlayersByName : filteredPlayersByTeam} onFormSubmit={onFormSubmit}/>}/>
+          <Route path="/" element={<QBList playerList={sortPlayers()} onFormSubmit={onFormSubmit}/>}/>
           <Route path="/form" element={<NewQbForm onFormSubmit={onFormSubmit} />}/>
           <Route path="/player/:id/EditForm" element={<EditPlayerForm onEditPlayer={onEditPlayer}/>}/>
           <Route path="/favorites" element={<FavoritesList playerList={playerList}/>}/>
