@@ -611,6 +611,30 @@
       "image": "./images/casekeenum.png",
       "favorited": false,
       "active": true
+    },
+    {
+      "name": "gggg",
+      "team": "",
+      "yards": 0,
+      "rtouchdowns": 0,
+      "ptouchdowns": 0,
+      "completions": 0,
+      "image": "./images/stockplayer.jpg",
+      "favorited": false,
+      "active": "false",
+      "id": 52
+    },
+    {
+      "name": "rgrg",
+      "team": "",
+      "yards": 0,
+      "rtouchdowns": 0,
+      "ptouchdowns": 0,
+      "completions": 0,
+      "image": "./images/stockplayer.jpg",
+      "favorited": false,
+      "active": "false",
+      "id": 53
     }
   ]
 }

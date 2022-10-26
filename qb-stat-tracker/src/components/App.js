@@ -105,7 +105,8 @@ function sortPlayers() {
       ptouchdowns:editedPlayer.ptouchdowns,
       completions:editedPlayer.completions,
       image:editedPlayer.image,
-      favorited: editedPlayer.favorited
+      favorited: editedPlayer.favorited,
+      active: editedPlayer.active
     })
   })
   .then(res => res.json())
