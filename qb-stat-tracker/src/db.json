@@ -10,7 +10,7 @@
       "completions": 5,
       "image": "./images/joshallen.png",
       "favorited": true,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "completions": 176,
       "image": "./images/patrickmahomes.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "completions": 3,
       "image": "./images/joeburrow.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "completions": 121,
       "image": "./images/lamarjackson.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
       "completions": 123,
       "image": "./images/jalenhurts.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "completions": 184,
       "image": "./images/kylermurray.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
       "completions": 158,
       "image": "./images/genosmith.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "completions": 203,
       "image": "./images/justinherbert.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@
       "completions": 126,
       "image": "./images/danieljones.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@
       "completions": 155,
       "image": "./images/trevorlawrence.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 11,
@@ -130,7 +130,7 @@
       "completions": 92,
       "image": "./images/marcusmariota.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 12,
@@ -142,7 +142,7 @@
       "completions": 198,
       "image": "./images/tombrady.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 13,
@@ -154,7 +154,7 @@
       "completions": 144,
       "image": "./images/carsonwentz.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 14,
@@ -166,7 +166,7 @@
       "completions": 151,
       "image": "./images/kirkcousins.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 15,
@@ -178,7 +178,7 @@
       "completions": 203,
       "image": "./images/mattryan.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 16,
@@ -190,7 +190,7 @@
       "completions": 132,
       "image": "./images/jaredgoff.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 17,
@@ -202,7 +202,7 @@
       "completions": 163,
       "image": "./images/aaronrodgers.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 18,
@@ -214,7 +214,7 @@
       "completions": 134,
       "image": "./images/derekcarr.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 19,
@@ -226,7 +226,7 @@
       "completions": 146,
       "image": "./images/jacobybrissett.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 20,
@@ -238,7 +238,7 @@
       "completions": 119,
       "image": "./images/jimmygaroppolo.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 21,
@@ -250,7 +250,7 @@
       "completions": 116,
       "image": "./images/russellwilson.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 22,
@@ -262,7 +262,7 @@
       "completions": 101,
       "image": "./images/tuatagovailoa.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 23,
@@ -274,7 +274,7 @@
       "completions": 63,
       "image": "./images/justinfields.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 24,
@@ -286,7 +286,7 @@
       "completions": 132,
       "image": "./images/davismills.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 25,
@@ -298,7 +298,7 @@
       "completions": 160,
       "image": "./images/matthewstafford.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 26,
@@ -310,7 +310,7 @@
       "completions": 95,
       "image": "./images/ryantannehill.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 27,
@@ -322,7 +322,7 @@
       "completions": 83,
       "image": "./images/andydalton.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 28,
@@ -334,7 +334,7 @@
       "completions": 84,
       "image": "./images/bakermayfield.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 29,
@@ -346,7 +346,7 @@
       "completions": 90,
       "image": "./images/cooperrush.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 30,
@@ -358,7 +358,7 @@
       "completions": 78,
       "image": "./images/mitchtrubisky.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 31,
@@ -370,7 +370,7 @@
       "completions": 87,
       "image": "./images/kennypickett.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 32,
@@ -382,7 +382,7 @@
       "completions": 73,
       "image": "./images/jameiswinston.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 33,
@@ -394,7 +394,7 @@
       "completions": 91,
       "image": "./images/joeflacco.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 34,
@@ -406,7 +406,7 @@
       "completions": 58,
       "image": "./images/zachwilson.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 35,
@@ -418,7 +418,7 @@
       "completions": 64,
       "image": "./images/macjones.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 36,
@@ -430,7 +430,7 @@
       "completions": 51,
       "image": "./images/baileyzappe.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 37,
@@ -442,7 +442,7 @@
       "completions": 37,
       "image": "./images/teddybridgewater.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 38,
@@ -454,7 +454,7 @@
       "completions": 33,
       "image": "./images/dakprescott.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 39,
@@ -466,7 +466,7 @@
       "completions": 31,
       "image": "./images/pjwalker.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 40,
@@ -478,7 +478,7 @@
       "completions": 20,
       "image": "./images/taylorheinicke.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 41,
@@ -490,7 +490,7 @@
       "completions": 15,
       "image": "./images/treylance.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 42,
@@ -502,7 +502,7 @@
       "completions": 24,
       "image": "./images/brettrypien.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 43,
@@ -514,7 +514,7 @@
       "completions": 46,
       "image": "./images/skylarthompson.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 44,
@@ -526,7 +526,7 @@
       "completions": 6,
       "image": "./images/jordanlove.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 45,
@@ -538,7 +538,7 @@
       "completions": 2,
       "image": "./images/tracemcsorley.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 46,
@@ -550,7 +550,7 @@
       "completions": 1,
       "image": "./images/tyrodtaylor.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 47,
@@ -562,7 +562,7 @@
       "completions": 4,
       "image": "./images/brockpurdy.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 48,
@@ -574,7 +574,7 @@
       "completions": 0,
       "image": "./images/jeffdriskel.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 49,
@@ -586,7 +586,7 @@
       "completions": 5,
       "image": "./images/brianhoyer.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 50,
@@ -598,7 +598,7 @@
       "completions": 3,
       "image": "./images/jacobeason.png",
       "favorited": false,
-      "active": true
+      "status": "Active"
     },
     {
       "id": 51,
@@ -610,31 +610,7 @@
       "completions": 2,
       "image": "./images/casekeenum.png",
       "favorited": false,
-      "active": true
-    },
-    {
-      "name": "gggg",
-      "team": "",
-      "yards": 0,
-      "rtouchdowns": 0,
-      "ptouchdowns": 0,
-      "completions": 0,
-      "image": "./images/stockplayer.jpg",
-      "favorited": false,
-      "active": "false",
-      "id": 52
-    },
-    {
-      "name": "rgrg",
-      "team": "",
-      "yards": 0,
-      "rtouchdowns": 0,
-      "ptouchdowns": 0,
-      "completions": 0,
-      "image": "./images/stockplayer.jpg",
-      "favorited": false,
-      "active": "false",
-      "id": 53
+      "status": "Active"
     }
   ]
 }

@@ -12,8 +12,10 @@ const NewQbForm = ({ onFormSubmit }) => {
         completions:0,
         image:"./images/stockplayer.jpg",
         favorited: false,
-        active: true
+        Status: "Active"
     })
+
+
 
     const handleChange = (event) => {
         const { name, value } = event.target
@@ -36,9 +38,10 @@ const NewQbForm = ({ onFormSubmit }) => {
             <input type="number" name="ptouchdowns" placeholder="Rushing Touchdowns" onChange={handleChange}/>
             <input type="number" name="completions" placeholder="Completions Touchdowns" onChange={handleChange}/>
             <input type="text" name="image" placeholder="Player's image" onChange={handleChange}/>
-            <select type="boolean" name="active" placeholder="Player Status" onChange={handleChange}>
-                <option value = {true} >Active</option>
-                <option value = {false}>Inactive</option>
+            <select name="Status" placeholder="Player Status" onChange={handleChange}>
+                <option value="Set Status" selected disabled hidden>Select Status</option>
+                <option value="Active" >Active</option>
+                <option value="Inactive" >Inactive</option>
             </select>
             <button>Add Player</button>
         </form>
