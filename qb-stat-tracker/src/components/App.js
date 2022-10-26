@@ -53,8 +53,7 @@ function App() {
   function changeSearchValue() {
     setSearchValue(!searchValue)
   }
-  const filteredPlayersByName = playerList.filter(player => player.name.toLowerCase().includes(searchTerm.toLowerCase()))
-  const filteredPlayersByTeam = playerList.filter(player => player.team.toLowerCase().includes(searchTerm.toLowerCase()))
+  const filteredPlayers = playerList.filter(player => player.name.toLowerCase().includes(searchTerm.toLowerCase()) || player.team.toLowerCase().includes(searchTerm.toLowerCase()))
 
   const changePageUrl = (newUrl) => {
     navigate(newUrl)
@@ -88,6 +87,11 @@ function App() {
     navigate('/')})
 }
 
+ const handleFavoriteChange =(updatedPlayer)=>{
+  const updatedList = playerList.map((player) => player.id === updatedPlayer.id? updatedPlayer: player)
+  setPlayerList(updatedList)
+ }
+
 
 
 
@@ -95,10 +99,10 @@ function App() {
     <div>
       <Header changePageUrl={changePageUrl} changeSearch = {changeSearch} changeSearchValue = {changeSearchValue} searchValue = {searchValue}/>
         <Routes>
-          <Route path="/" element={<QBList playerList={searchValue ? filteredPlayersByName : filteredPlayersByTeam} onFormSubmit={onFormSubmit}/>}/>
+          <Route path="/" element={<QBList playerList={filteredPlayers} onFormSubmit={onFormSubmit} handleFavoriteChange={handleFavoriteChange}/>}/>
           <Route path="/form" element={<NewQbForm onFormSubmit={onFormSubmit} />}/>
           <Route path="/player/:id/EditForm" element={<EditPlayerForm onEditPlayer={onEditPlayer}/>}/>
-          <Route path="/favorites" element={<FavoritesList playerList={playerList}/>}/>
+          <Route path="/favorites" element={<FavoritesList playerList={filteredPlayers} handleFavoriteChange={handleFavoriteChange}/>}/>
         </Routes>
     </div>
   )

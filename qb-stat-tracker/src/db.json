@@ -9,7 +9,7 @@
       "ptouchdowns": "24",
       "completions": "5",
       "image": "./images/joshallen.png",
-      "favorited": false,
+      "favorited": true,
       "active": true
     },
     {
