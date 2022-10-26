@@ -15,7 +15,8 @@ const Header = (props) => {
             <nav>
                 <Link to="/" onClick={handleLinkClick}>Home</Link>
                 <Link to="/form" onClick={handleLinkClick}>New Player Form</Link>
-                <Link to="/favorites" onClick={handleLinkClick}>Favrites List</Link>
+                <Link to="/favorites" onClick={handleLinkClick}>Favorites List</Link>
+                <Link to="/activelist" onClick={handleLinkClick}>Active List</Link>
             </nav>
 
                 <Search changeSearch ={props.changeSearch}

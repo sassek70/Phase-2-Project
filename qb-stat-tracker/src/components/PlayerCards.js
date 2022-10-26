@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const playerUrl = `http://localhost:4000/quarterbacks/`
 
-const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, completions, favorited, active, handleFavoriteChange}) => {
+const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, completions, favorited, status, handleFavoriteChange}) => {
     const [isFavorited, setIsFavorited] = useState(favorited)
 
     const toggleFavorite = () => {
@@ -44,7 +44,7 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
                 <p>Rushing Touchdowns: {rtouchdowns}</p>
                 <p>Passing Touchdowns: {ptouchdowns}</p>
                 <p>Completions: {completions}</p>
-                <p>Status: {active ? "Active" : "Inactive"}</p>
+                <p>Status: {status}</p>
                 {isFavorited ? 
                     <button onClick={toggleFavorite}>Remove from Favorites</button>
                     :

@@ -5,6 +5,7 @@ import NewQbForm from "./NewQBForm";
 import QBList from "./QBList";
 import EditPlayerForm from "./EditPlayerForm"
 import FavoritesList from "./FavoritesList";
+import ActivesList from "./ActivesList";
 
 const playerUrl = `http://localhost:4000/quarterbacks/`
 
@@ -106,7 +107,7 @@ function sortPlayers() {
       completions:editedPlayer.completions,
       image:editedPlayer.image,
       favorited: editedPlayer.favorited,
-      active: editedPlayer.active
+      status: editedPlayer.status
     })
   })
   .then(res => res.json())
@@ -121,6 +122,10 @@ function sortPlayers() {
   setPlayerList(updatedList)
  }
 
+ const handleStatusChange=(updatedPlayer)=>{
+  const updatedList = playerList.map((player => player.id === updatedPlayer.id? updatedPlayer: player))
+  setPlayerList(updatedList)
+}
 
 
 
@@ -133,6 +138,7 @@ function sortPlayers() {
           <Route path="/form" element={<NewQbForm onFormSubmit={onFormSubmit} />}/>
           <Route path="/player/:id/EditForm" element={<EditPlayerForm onEditPlayer={onEditPlayer}/>}/>
           <Route path="/favorites" element={<FavoritesList playerList={filteredPlayers} handleFavoriteChange={handleFavoriteChange}/>}/>
+          <Route path="/activelist" element={<ActivesList playerList={filteredPlayers} handleStatusChange={handleStatusChange}/>}/>
         </Routes>
     </div>
   )
