@@ -44,18 +44,37 @@ const EditForm = ({onEditPlayer}) => {
 
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input value={formData.name} type="text" name="name" placeholder="Player's Name" onChange={handleChange}/>
-            <input value={formData.team} type="text" name="team" placeholder="Player's Team" onChange={handleChange}/>
-            <input value={formData.yards} type="number" name="yards" placeholder="Total Yards" onChange={handleChange}/>
-            <input value={formData.rtouchdowns} type="number" name="rtouchdowns" placeholder="Passing Touchdowns" onChange={handleChange}/>
-            <input value={formData.ptouchdowns} type="number" name="ptouchdowns" placeholder="Rushing Touchdowns" onChange={handleChange}/>
-            <input value={formData.completions} type="number" name="completions" placeholder="Completions Touchdowns" onChange={handleChange}/>
-            <input value={formData.image} type="text" name="image" placeholder="Player's image" onChange={handleChange}/>
-            <label htmlFor="checkbox">Active</label>
-            <input type="checkbox" name="status" checked={formData.status === "Active"} onChange={handleChange}/>
-            <button type="submit">Edit Player</button>
-        </form>
+        <>
+            <form onSubmit={handleSubmit} className="form">
+                <h1>Edit {formData.name}'s Stats:</h1>
+                <label className="input-label" htmlFor="name">Player's Name:</label>
+                <input className="input" value={formData.name} type="text" name="name" placeholder="Player's Name" onChange={handleChange}/>
+
+                <label className="input-label" htmlFor="team">Player's Team:</label>
+                <input className="input" value={formData.team} type="text" name="team" placeholder="Player's Team" onChange={handleChange}/>
+
+                <label className="input-label" htmlFor="yards">Total Yards:</label>
+                <input className="input" value={formData.yards} type="number" name="yards" placeholder="Total Yards" onChange={handleChange}/>
+
+                <label className="input-label" htmlFor="rtouchdowns">Rushing Touchdowns:</label>
+                <input className="input" value={formData.rtouchdowns} type="number" name="rtouchdowns" placeholder="Passing Touchdowns" onChange={handleChange}/>
+
+                <label className="input-label" htmlFor="ptouchdowns">Passing Touchdowns:</label>
+                <input className="input" value={formData.ptouchdowns} type="number" name="ptouchdowns" placeholder="Rushing Touchdowns" onChange={handleChange}/>
+
+                <label className="input-label" htmlFor="completions">Completions:</label>
+                <input className="input" value={formData.completions} type="number" name="completions" placeholder="Completions Touchdowns" onChange={handleChange}/>
+
+                <label className="input-label" htmlFor="image">Player's Photo:</label>
+                <input className="input" value={formData.image} type="text" name="image" placeholder="Player's image" onChange={handleChange}/>
+
+                <label className="input-label-checkbox" htmlFor="checkbox">Active:
+                <input type="checkbox" name="status" checked={formData.status === "Active"} onChange={handleChange}/>
+                </label>
+
+                <button type="submit" className="form-submit-button">Edit Player</button>
+            </form>
+        </>
     )
 }
 

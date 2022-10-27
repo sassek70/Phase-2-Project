@@ -1,28 +1,30 @@
 import Search from "./Search"
-import { Link } from "react-router-dom"
-import React from "react"
+import { NavLink } from "react-router-dom"
+import React, { useState } from "react"
 import Sort from "./Sort"
 
 const Header = (props) => {
 
-    const handleLinkClick =(e) => {
-        e.preventDefault()
-        props.changePageUrl(e.target.pathname)
-    }
+
 
     return (
         <>
-            <nav>
-                <Link to="/" onClick={handleLinkClick}>Home</Link>
-                <Link to="/form" onClick={handleLinkClick}>New Player Form</Link>
-                <Link to="/favorites" onClick={handleLinkClick}>Favorites List</Link>
-                <Link to="/activelist" onClick={handleLinkClick}>Active List</Link>
+            <nav className="link-container">
+                <NavLink className="linkButtons" name="home" to="/" onClick={props.handleLinkClick}>Home</NavLink>
+                <NavLink className="linkButtons" name="New Player Form" to="/form" onClick={props.handleLinkClick}>New Player Form</NavLink>
+                <NavLink className="linkButtons" name="Favorites List" to="/favorites" onClick={props.handleLinkClick}>Favorites List</NavLink>
+                <NavLink className="linkButtons" name="Active List" to="/activelist" onClick={props.handleLinkClick}>Active List</NavLink>
             </nav>
-
+            {props.displayStatus === false  ? 
+            null
+            :
+            <div className="search-sort">
                 <Search changeSearch ={props.changeSearch}
                 changeSearchValue = {props.changeSearchValue}
                 searchValue = {props.searchValue} />
                 <Sort changeSortBy = {props.changeSortBy}/>
+            </div>
+            }
         </>
     )
 }

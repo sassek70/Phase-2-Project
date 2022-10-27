@@ -7,7 +7,7 @@
       "yards": 234,
       "rtouchdowns": 30,
       "ptouchdowns": 24,
-      "completions": 5,
+      "completions": "7",
       "image": "./images/joshallen.png",
       "favorited": false,
       "status": "Inactive"
@@ -21,7 +21,7 @@
       "ptouchdowns": 20,
       "completions": 176,
       "image": "./images/patrickmahomes.png",
-      "favorited": false,
+      "favorited": true,
       "status": "Active"
     },
     {

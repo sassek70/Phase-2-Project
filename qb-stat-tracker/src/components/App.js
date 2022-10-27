@@ -15,6 +15,8 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('')
   const [searchValue, setSearchValue] = useState(true)
   const [sort, setSort] = useState('None')  
+  const [displayStatus, setDisplayStatus] = useState(null)
+  
   
   const navigate = useNavigate()
 
@@ -34,7 +36,9 @@ function App() {
       body: JSON.stringify(newPlayer)
     })
     .then(res => res.json())
-    .then((updatedList) => updatePlayerList(updatedList))
+    .then((updatedList) => {
+      updatePlayerList(updatedList)
+      navigate('/')})
   }
 
   const updateList = () => {
@@ -127,18 +131,30 @@ function sortPlayers() {
   setPlayerList(updatedList)
 }
 
+console.log(displayStatus)
+
+const handleLinkClick =(e) => {
+    e.preventDefault()
+    const { name, pathname } = e.target
+    if(name === "home" || name === "Favorites List" || name === "Active List") {
+        setDisplayStatus(true)
+    } else {
+        setDisplayStatus(false)
+    }
+    changePageUrl(pathname)        
+}
 
 
   return (
     <div>
       <Header changePageUrl={changePageUrl} changeSearch = {changeSearch} changeSearchValue = {changeSearchValue} searchValue = {searchValue}
-      changeSortBy = {changeSortBy}/>
+      changeSortBy = {changeSortBy} handleLinkClick={handleLinkClick} displayStatus={displayStatus}/>
         <Routes>
-          <Route path="/" element={<QBList playerList={sortPlayers()} onFormSubmit={onFormSubmit} handleFavoriteChange={handleFavoriteChange}/>}/>
+          <Route path="/" element={<QBList playerList={sortPlayers()} onFormSubmit={onFormSubmit} handleFavoriteChange={handleFavoriteChange} handleLinkClick={handleLinkClick} setDisplayStatus={setDisplayStatus}/>}/>
           <Route path="/form" element={<NewQbForm onFormSubmit={onFormSubmit} />}/>
           <Route path="/player/:id/EditForm" element={<EditPlayerForm onEditPlayer={onEditPlayer}/>}/>
-          <Route path="/favorites" element={<FavoritesList playerList={filteredPlayers} handleFavoriteChange={handleFavoriteChange}/>}/>
-          <Route path="/activelist" element={<ActivesList playerList={filteredPlayers} handleStatusChange={handleStatusChange}/>}/>
+          <Route path="/favorites" element={<FavoritesList playerList={filteredPlayers} handleFavoriteChange={handleFavoriteChange} setDisplayStatus={setDisplayStatus}/>}/>
+          <Route path="/activelist" element={<ActivesList playerList={filteredPlayers} handleStatusChange={handleStatusChange} setDisplayStatus={setDisplayStatus} />}/>
         </Routes>
     </div>
   )
