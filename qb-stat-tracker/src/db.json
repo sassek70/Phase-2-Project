@@ -9,8 +9,8 @@
       "ptouchdowns": 24,
       "completions": 5,
       "image": "./images/joshallen.png",
-      "favorited": true,
-      "status": "Active"
+      "favorited": false,
+      "status": "Inactive"
     },
     {
       "id": 2,
@@ -226,7 +226,7 @@
       "completions": 146,
       "image": "./images/jacobybrissett.png",
       "favorited": false,
-      "status": "Active"
+      "status": "Inactive"
     },
     {
       "id": 20,
