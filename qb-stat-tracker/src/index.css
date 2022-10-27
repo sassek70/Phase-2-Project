@@ -1,18 +1,239 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+:root {
+  --burlywood: #deb887;
+  --darkgrey: #a9a9a9;
+  --background: var(--darkgrey)
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  margin-bottom: 5px;
 }
-
 
 body {
   background-color: darkgray;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('../public/images/football-stadium2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
 }
+
+.form {
+  display: inline-flexbox;
+  padding: 10px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+  max-width: 630px;
+  background-color: #a9a9a9;
+  opacity: 0.8;
+}
+
+.input-label {
+  display: block;
+  font-size: larger;
+  font-weight:bold;
+  text-decoration: underline;
+  padding: 3px;
+  margin: auto;
+  text-align: center;
+}
+
+.input {
+  flex-grow: 1;
+  text-align: center;
+  margin: 5px;
+ }
+
+.input-label-checkbox {
+  display: block;
+  font-size: larger;
+  font-weight:bold;
+  text-decoration: underline;
+  padding: 3px;
+  margin: auto;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  font-weight:bold;
+  padding: 3px;
+  margin: auto;
+  text-align: center;
+}
+
+.search-sort {
+  display: inline-flexbox;
+  padding: 10px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+  max-width: 630px;
+  background-color: #a9a9a9;
+  opacity: 0.8;
+}
+
+.search-bar {
+  display: inline-flex; 
+  padding: 3px;
+  margin: 5px;
+}
+
+.sort {
+  display: inline-flex;
+  /* border-radius: 5px;
+  border-color: black;
+  border-width: 3px; */
+  /* border-style: solid; */
+  padding: 3px;
+  margin: 5px;
+}
+
+.player-card {
+  margin: 10px;
+  border: 5px solid black;
+  width: 30vw;
+  min-height: 26vh;
+  background-color: darkgray;
+  opacity: 0.8;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  column-count: 2;
+  column-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player-image {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  opacity: 1;
+}
+
+.player-details {
+  display: inline-block;
+  text-align: left;
+  max-width: -40%;
+}
+
+.link {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-evenly;
+  font-size:1.25rem;
+  margin: auto;
+  max-width: 500px;
+  flex-grow: 1;
+}
+
+.buttons {
+  margin: 4px;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  border: none;
+  border: 1px solid black;   
+  background-color: #a9a9a9;
+  text-decoration: none;
+  color: black;
+}
+
+.buttons:hover {
+  cursor: pointer;
+  background-color: #deb887;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button, .buttons {
+  margin: 4px;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  border: none;
+  border: 1px solid black;   
+  background-color: darkgray;
+  text-decoration: none;
+  color: black;
+  font: inherit;
+}
+
+.linkButtons {
+  margin: 4px;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  border: none;
+  border: 1px solid black;   
+  background-color: var(--darkgrey);
+  text-decoration: none;
+  color: black;
+}
+
+.linkButtons:focus,
+.linkButtons:hover,
+.linkButtons:active {
+  cursor: pointer;
+  background-color: var(--burlywood);
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.form-submit-button {
+  margin: 10px;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  border: none;
+  border: 1px solid black;   
+  background-color: darkgray;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+
+}
+
+.form-submit-button:hover {
+  cursor: pointer;
+  background-color: #deb887;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

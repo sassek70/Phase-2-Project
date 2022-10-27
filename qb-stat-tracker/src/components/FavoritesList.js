@@ -18,7 +18,7 @@ const FavoritesList = ({playerList, handleFavoriteChange}) => {
     
 
     return (
-        <div>
+        <div className="card-container">
             {displayFavoritePlayers.length < 1 ? <h2>No Favorite Players</h2>: displayFavoritePlayers}
         </div>
     )

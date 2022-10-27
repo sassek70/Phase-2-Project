@@ -1,5 +1,5 @@
 import Search from "./Search"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import React from "react"
 import Sort from "./Sort"
 
@@ -12,17 +12,18 @@ const Header = (props) => {
 
     return (
         <>
-            <nav>
-                <Link to="/" onClick={handleLinkClick}>Home</Link>
-                <Link to="/form" onClick={handleLinkClick}>New Player Form</Link>
-                <Link to="/favorites" onClick={handleLinkClick}>Favorites List</Link>
-                <Link to="/activelist" onClick={handleLinkClick}>Active List</Link>
+            <nav className="link-container">
+                <NavLink className="linkButtons" exact to="/" onClick={handleLinkClick}>Home</NavLink>
+                <NavLink className="linkButtons" exact to="/form" onClick={handleLinkClick}>New Player Form</NavLink>
+                <NavLink className="linkButtons" exact to="/favorites" onClick={handleLinkClick}>Favorites List</NavLink>
+                <NavLink className="linkButtons" exact to="/activelist" onClick={handleLinkClick}>Active List</NavLink>
             </nav>
-
+            <div className="search-sort">
                 <Search changeSearch ={props.changeSearch}
                 changeSearchValue = {props.changeSearchValue}
                 searchValue = {props.searchValue} />
                 <Sort changeSortBy = {props.changeSortBy}/>
+            </div>
         </>
     )
 }

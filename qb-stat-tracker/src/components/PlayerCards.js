@@ -39,9 +39,9 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
 
 
     return (
-        <>
-            <img src={image} alt={name} onClick={showStats}/>
-            <div>
+        <div className="player-card" onClick={showStats}>
+            <img src={image} alt={name} className="player-image"/>
+            <div className="player-details">
                 {showDetails ? 
                 <>
                 <p>Total yards: {yards}</p>
@@ -50,11 +50,11 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
                 <p>Completions: {completions}</p>
                 <p>Status: {status}</p>
                 {isFavorited ? 
-                    <button onClick={toggleFavorite}>Remove from Favorites</button>
+                    <button className="buttons" onClick={toggleFavorite}>Remove from Favorites</button>
                     :
-                    <button onClick={toggleFavorite}>Add to Favorites</button>
+                    <button className="buttons" onClick={toggleFavorite}>Add to Favorites</button>
                 }
-                <Link to={`/player/${id}/EditForm`}>Edit Player Stats</Link>
+                <Link className="buttons" to={`/player/${id}/EditForm`}>Edit Player Stats</Link>
                 </>
                 :
                 <>
@@ -63,7 +63,7 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
                 </>
             }
             </div>
-        </>
+        </div>
     )
 }
 

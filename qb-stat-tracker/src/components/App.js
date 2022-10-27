@@ -34,7 +34,9 @@ function App() {
       body: JSON.stringify(newPlayer)
     })
     .then(res => res.json())
-    .then((updatedList) => updatePlayerList(updatedList))
+    .then((updatedList) => {
+      updatePlayerList(updatedList)
+      navigate('/')})
   }
 
   const updateList = () => {
