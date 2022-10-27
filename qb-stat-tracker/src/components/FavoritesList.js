@@ -1,7 +1,5 @@
 import PlayerCard from "./PlayerCards"
 
-
-
 const FavoritesList = ({playerList, handleFavoriteChange, setDisplayStatus}) => {
 
     let favoritePlayers = playerList.filter((player) => (player.favorited === true)) 
@@ -15,8 +13,6 @@ const FavoritesList = ({playerList, handleFavoriteChange, setDisplayStatus}) => 
         status = {status} setDisplayStatus={setDisplayStatus}/>
     })
      
-    
-
     return (
         <div className="card-container">
             {displayFavoritePlayers.length < 1 ? <h2>No Favorite Players</h2>: displayFavoritePlayers}

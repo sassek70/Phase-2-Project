@@ -11,9 +11,7 @@ const ActivesList = ({playerList, handleStatusChange, setDisplayStatus}) => {
         completions={completions} favorited={favorited} status={status} handleStatusChange={handleStatusChange}
         setDisplayStatus={setDisplayStatus}/>
     })
-     
     
-
     return (
         <div className="card-container">
             {displayActivePlayers.length < 1 ? <h2>No Active Players</h2>: displayActivePlayers}

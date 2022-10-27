@@ -10,10 +10,8 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
     const toggleFavorite = (e) => {
         e.stopPropagation()
         setIsFavorited((isFavorited) => !isFavorited)
-        persistFavoriteToggle()
-        
+        persistFavoriteToggle()       
     }
-
 
     const hideSearchSort = () => {
         setDisplayStatus(false)
@@ -39,8 +37,6 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
     const showStats = (e) =>{
         setShowDetails(!showDetails)
     }
-
-
 
     return (
         <div className="player-card" onClick={showStats}>

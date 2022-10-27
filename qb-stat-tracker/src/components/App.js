@@ -125,7 +125,7 @@ console.log(displayStatus)
 const handleLinkClick =(e) => {
     e.preventDefault()
     const { name, pathname } = e.target
-    if(name === "home" || name === "Favorites List" || name === "Active List") {
+    if(name === "home" || name === "Favorite Players" || name === "Active Players") {
         setDisplayStatus(true)
     } else {
         setDisplayStatus(false)

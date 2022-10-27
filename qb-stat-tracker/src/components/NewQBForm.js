@@ -1,7 +1,5 @@
 import { useState } from "react"
 
-
-
 const NewQbForm = ({ onFormSubmit }) => {
     const [formData, setFormData] = useState({
         name: "",
@@ -14,8 +12,6 @@ const NewQbForm = ({ onFormSubmit }) => {
         favorited: false,
         status: "Active"
     })
-
-
 
     const handleChange = (event) => {
         const { name, value } = event.target

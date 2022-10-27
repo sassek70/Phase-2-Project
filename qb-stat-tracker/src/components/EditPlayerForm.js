@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
-
 const EditForm = ({onEditPlayer}) => {
     const { id } = useParams()
     const [formData, setFormData] = useState({
@@ -25,8 +24,6 @@ const EditForm = ({onEditPlayer}) => {
         setFormData(playerInfo)
     })
 },[])
-
-
     
     const handleChange = (event) => {
         let { name, value, checked } = event.target

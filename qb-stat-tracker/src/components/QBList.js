@@ -1,4 +1,3 @@
-
 import PlayerCard from "./PlayerCards"
 
 const QBList = ({playerList, handleFavoriteChange, setDisplayStatus}) => {

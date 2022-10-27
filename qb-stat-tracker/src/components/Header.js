@@ -1,19 +1,17 @@
 import Search from "./Search"
 import { NavLink } from "react-router-dom"
-import React, { useState } from "react"
+import React from "react"
 import Sort from "./Sort"
 
 const Header = (props) => {
-
-
 
     return (
         <>
             <nav className="link-container">
                 <NavLink className="linkButtons" name="home" to="/" onClick={props.handleLinkClick}>Home</NavLink>
                 <NavLink className="linkButtons" name="New Player Form" to="/form" onClick={props.handleLinkClick}>New Player Form</NavLink>
-                <NavLink className="linkButtons" name="Favorites List" to="/favorites" onClick={props.handleLinkClick}>Favorites List</NavLink>
-                <NavLink className="linkButtons" name="Active List" to="/activelist" onClick={props.handleLinkClick}>Active List</NavLink>
+                <NavLink className="linkButtons" name="Favorite Players" to="/favorites" onClick={props.handleLinkClick}>Favorite Players</NavLink>
+                <NavLink className="linkButtons" name="Active Players" to="/activelist" onClick={props.handleLinkClick}>Active Players</NavLink>
             </nav>
             {props.displayStatus === false  ? 
             null

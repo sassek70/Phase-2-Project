@@ -21,7 +21,7 @@
       "ptouchdowns": 20,
       "completions": 176,
       "image": "./images/patrickmahomes.png",
-      "favorited": true,
+      "favorited": false,
       "status": "Active"
     },
     {
@@ -45,7 +45,7 @@
       "ptouchdowns": 13,
       "completions": 121,
       "image": "./images/lamarjackson.png",
-      "favorited": false,
+      "favorited": true,
       "status": "Active"
     },
     {
@@ -57,7 +57,7 @@
       "ptouchdowns": 6,
       "completions": 123,
       "image": "./images/jalenhurts.png",
-      "favorited": false,
+      "favorited": true,
       "status": "Active"
     },
     {
