@@ -3,16 +3,21 @@ import { NavLink } from "react-router-dom"
 
 const playerUrl = `http://localhost:4000/quarterbacks/`
 
-const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, completions, favorited, status, handleFavoriteChange}) => {
+const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, completions, favorited, status, handleFavoriteChange, setDisplayStatus}) => {
     const [isFavorited, setIsFavorited] = useState(favorited)
     const [showDetails, setShowDetails] = useState(false)
 
-    const toggleFavorite = () => {
+    const toggleFavorite = (e) => {
+        e.stopPropagation()
         setIsFavorited((isFavorited) => !isFavorited)
         persistFavoriteToggle()
         
     }
 
+
+    const hideSearchSort = () => {
+        setDisplayStatus(false)
+    }
 
     const persistFavoriteToggle = () => {
         // console.log(isFavorited)
@@ -32,7 +37,7 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
         })
     }
 
-    const showStats = () =>{
+    const showStats = (e) =>{
         setShowDetails(!showDetails)
     }
 
@@ -54,7 +59,7 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
                     :
                     <button className="buttons" onClick={toggleFavorite}>Add to Favorites</button>
                 }
-                <NavLink className="buttons" to={`/player/${id}/EditForm`}>Edit Player Stats</NavLink>
+                <NavLink className="buttons" to={`/player/${id}/EditForm`} name="Edit Player" onClick={hideSearchSort}>Edit Player Stats</NavLink>
                 </>
                 :
                 <>
