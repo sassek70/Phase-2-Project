@@ -16,6 +16,7 @@ function App() {
   const [searchValue, setSearchValue] = useState(true)
   const [sort, setSort] = useState('None')  
   
+  
   const navigate = useNavigate()
 
   const updatePlayerList = (newPlayer) => {

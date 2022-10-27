@@ -7,9 +7,9 @@
       "yards": 234,
       "rtouchdowns": 30,
       "ptouchdowns": 24,
-      "completions": 5,
+      "completions": "7",
       "image": "./images/joshallen.png",
-      "favorited": true,
+      "favorited": false,
       "status": "Inactive"
     },
     {
@@ -21,7 +21,7 @@
       "ptouchdowns": 20,
       "completions": 176,
       "image": "./images/patrickmahomes.png",
-      "favorited": true,
+      "favorited": false,
       "status": "Active"
     },
     {
@@ -611,78 +611,6 @@
       "image": "./images/casekeenum.png",
       "favorited": false,
       "status": "Active"
-    },
-    {
-      "name": "",
-      "team": "",
-      "yards": 0,
-      "rtouchdowns": 0,
-      "ptouchdowns": 0,
-      "completions": 0,
-      "image": "./images/stockplayer.jpg",
-      "favorited": false,
-      "Status": "Active",
-      "id": 52
-    },
-    {
-      "name": "",
-      "team": "",
-      "yards": 0,
-      "rtouchdowns": 0,
-      "ptouchdowns": 0,
-      "completions": 0,
-      "image": "./images/stockplayer.jpg",
-      "favorited": false,
-      "Status": "Active",
-      "id": 53
-    },
-    {
-      "name": "",
-      "team": "",
-      "yards": 0,
-      "rtouchdowns": 0,
-      "ptouchdowns": 0,
-      "completions": 0,
-      "image": "./images/stockplayer.jpg",
-      "favorited": false,
-      "Status": "Active",
-      "id": 54
-    },
-    {
-      "name": "asdf",
-      "team": "asdf",
-      "yards": "2",
-      "rtouchdowns": "1",
-      "ptouchdowns": "2",
-      "completions": "3",
-      "image": "",
-      "favorited": false,
-      "status": "Active",
-      "id": 55
-    },
-    {
-      "name": "asdf",
-      "team": "asdf",
-      "yards": 0,
-      "rtouchdowns": "2",
-      "ptouchdowns": "2",
-      "completions": "2",
-      "image": "",
-      "favorited": false,
-      "status": "Active",
-      "id": 56
-    },
-    {
-      "name": "",
-      "team": "",
-      "yards": 0,
-      "rtouchdowns": 0,
-      "ptouchdowns": 0,
-      "completions": 0,
-      "image": "./images/stockplayer.jpg",
-      "favorited": false,
-      "status": "Active",
-      "id": 57
     }
   ]
 }

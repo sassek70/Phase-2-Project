@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const playerUrl = `http://localhost:4000/quarterbacks/`
 
@@ -54,7 +54,7 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
                     :
                     <button className="buttons" onClick={toggleFavorite}>Add to Favorites</button>
                 }
-                <Link className="buttons" to={`/player/${id}/EditForm`}>Edit Player Stats</Link>
+                <NavLink className="buttons" to={`/player/${id}/EditForm`}>Edit Player Stats</NavLink>
                 </>
                 :
                 <>
