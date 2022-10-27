@@ -19,17 +19,3 @@ const QBList = ({playerList, handleFavoriteChange, setDisplayStatus}) => {
 
 export default QBList
 
-
-
-
-
-
-// "id":1 ,
-// "name": "Josh Allen",
-// "team": "Buffalo Bills",
-// "yards": 2237,
-// "rtouchdowns":2,
-// "ptouchdowns":17,
-// "completions":160,
-// "image":"",
-// "favorited": false

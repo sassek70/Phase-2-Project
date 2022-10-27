@@ -20,7 +20,6 @@ const PlayerCard = ({id, name, team, image, yards, rtouchdowns, ptouchdowns, com
     }
 
     const persistFavoriteToggle = () => {
-        // console.log(isFavorited)
         fetch(playerUrl + `${id}`, {
         method: "PATCH",
         headers: {

@@ -9,7 +9,6 @@ import ActivesList from "./ActivesList";
 
 const playerUrl = `http://localhost:4000/quarterbacks/`
 
-
 function App() {
   const [playerList, setPlayerList] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
@@ -51,7 +50,6 @@ function App() {
     updateList()
   },[])
 
-
   function changeSearch(text) {
     setSearchTerm(text)
   }
@@ -60,21 +58,12 @@ function App() {
   }
   const filteredPlayers = playerList.filter(player => player.name.toLowerCase().includes(searchTerm.toLowerCase()) || player.team.toLowerCase().includes(searchTerm.toLowerCase()))
 
-
   
 function changeSortBy(newSortBy) {
   setSort(newSortBy)
 }
  
 
-// function makeSortedPlayers() {
-//   if (searchValue = true) {
-//     let sortedPlayers = filteredPlayersByName
-//   if (searchValue = false) {
-//    let sortedPlayers = filteredPlayersByTeam
-//   }
-// }
-// }
 function sortPlayers() {
   if (sort === 'Yards')
     return filteredPlayers.sort((player1, player2) => player2.yards - player1.yards)
@@ -143,7 +132,6 @@ const handleLinkClick =(e) => {
     }
     changePageUrl(pathname)        
 }
-
 
   return (
     <div>
