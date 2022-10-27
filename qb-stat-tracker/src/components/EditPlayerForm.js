@@ -30,9 +30,9 @@ const EditForm = ({onEditPlayer}) => {
     
     const handleChange = (event) => {
         let { name, value, checked } = event.target
-        // if(event.target.type === "checkbox"){ 
-        //     value = checked ? "Active" : "Inactive"
-        // }
+        if(event.target.type === "checkbox"){ 
+            value = checked ? "Active" : "Inactive"
+        }
         setFormData((formData) => ({...formData, [name]: value}))
     }
 
@@ -52,14 +52,10 @@ const EditForm = ({onEditPlayer}) => {
             <input value={formData.ptouchdowns} type="number" name="ptouchdowns" placeholder="Rushing Touchdowns" onChange={handleChange}/>
             <input value={formData.completions} type="number" name="completions" placeholder="Completions Touchdowns" onChange={handleChange}/>
             <input value={formData.image} type="text" name="image" placeholder="Player's image" onChange={handleChange}/>
-            {/* <input type="checkbox" name="status" checked={formData.status === "Active"} onChange={handleChange}/> */}
-            <select name="status" placeholder="Player Status" defaultValue={formData.status} onChange={handleChange}>
-                <option value="Active" >Active</option>
-                <option value="Inactive" >Inactive</option>
-            </select>
+            <label htmlFor="checkbox">Active</label>
+            <input type="checkbox" name="status" checked={formData.status === "Active"} onChange={handleChange}/>
             <button type="submit">Edit Player</button>
         </form>
-        // <div>Hello {`${id}`}</div>
     )
 }
 
