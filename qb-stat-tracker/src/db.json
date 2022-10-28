@@ -34,7 +34,7 @@
       "completions": 3,
       "image": "./images/joeburrow.png",
       "favorited": false,
-      "status": "Active"
+      "status": "Inactive"
     },
     {
       "id": 4,
@@ -45,8 +45,8 @@
       "ptouchdowns": 13,
       "completions": 121,
       "image": "./images/lamarjackson.png",
-      "favorited": true,
-      "status": "Active"
+      "favorited": false,
+      "status": "Inactive"
     },
     {
       "id": 5,
